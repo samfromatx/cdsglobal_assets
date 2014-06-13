@@ -2227,15 +2227,6 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/sites\/cds_global\/content\/themes\/cds\/style.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sites\/cds_global\/content\/themes\/cds\/style.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/style.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
