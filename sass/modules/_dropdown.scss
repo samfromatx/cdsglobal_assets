@@ -1,0 +1,41 @@
+
+// These styles only apply to desktop browsers
+// By default mobile should use the default dropdowns
+.dropdown {
+    position: relative;
+
+    @include icon($icon-caret-down, after) {
+        position: absolute;
+        color: #ef5439;
+        top: 6px;
+        right: 10px;
+        pointer-events: none;
+        display: none;
+        cursor: pointer;
+    }
+
+    @include breakpoint($not-phone) {
+        display: inline-block;
+        padding: 3px;
+        line-height: 1.1em;
+        margin-top: 8px;
+        border: 2px solid #dad7cf;
+        border-radius: 20px;
+        text-align: left;
+        color: #362e2b;
+        background-color: #f1eee9;
+        box-shadow: 1px 2px 2px 0px rgba(175, 166, 147, 0.07);
+
+        @include dropdown(250px) {
+            color: #362e2b;
+            font-family: $body-font;
+            margin-top: 0;
+        }
+
+        &::after {
+            display: block;
+            font-size: 24px;
+        }
+
+    }
+}

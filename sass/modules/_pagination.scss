@@ -1,0 +1,24 @@
+
+.main .pagination {
+    display: inline-block;
+    width: 100%;
+    margin: 20px 0;
+    @include pie-clearfix;
+
+    .previous {
+        float: left;
+        margin-right: 10px;
+
+        a::before {
+            content: "\00AB ";
+        }
+    }
+
+    .next {
+        float: right;
+
+        a::after {
+            content: " \00BB";
+        }
+    }
+}

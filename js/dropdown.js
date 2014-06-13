@@ -1,0 +1,2 @@
+(function(){var t,n;Modernizr.csspointerevents||(t=jQuery,n=t(".dropdown"),n.on("click",function(n){var i,e;return i=t(this),n.offsetX<i.width()-30?!0:(e=i.find("select"),e.one("blur",function(){return t(this).attr("size",1)}),e.attr("size",e.find("option").length),e.focus(),!1)}))}).call(this);
+//# sourceMappingURL=./dropdown.map

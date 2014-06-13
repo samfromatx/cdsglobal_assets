@@ -1,0 +1,30 @@
+.archive .main {
+    .list {
+        @include pie-clearfix;
+        padding-bottom: 20px;
+        border-top: 1px solid #ece4d9;
+
+        &:first-child {
+            border-top: none;
+        }
+
+        .more {
+            display: block;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: 1px solid $link-color;
+
+            @include breakpoint($not-phone) {
+                display: inline;
+                border: none;
+                padding: 0;
+            }
+        }
+        .image {
+            float:right; 
+            width:30%; 
+            margin:1em 0 0 0.2em;
+        }
+    }
+}

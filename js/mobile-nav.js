@@ -1,0 +1,2 @@
+(function(){var n,t,o,a;n=jQuery,o=n(".menu-button"),a=n(".container"),t=n("body > nav"),o.on("click",function(){return a.toggleClass("nav-open"),t.toggleClass("active")})}).call(this);
+//# sourceMappingURL=./mobile-nav.map

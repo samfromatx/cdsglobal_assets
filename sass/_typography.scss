@@ -1,0 +1,48 @@
+
+$headline-font: Roboto, sans-serif;
+$body-font: Lato, sans-serif;
+$body-color: darken(#867e70, 20%);
+//$link-color: #adc542;
+$link-color: #8dc73f;
+$secondary-link-color: #ef5439;
+$headline-color: #362f2d;
+
+@include establish-baseline();
+
+body {
+    font-family: $body-font;
+    color: $body-color;
+    background-color: #fcfcfa;
+}
+
+strong {
+    color: #362f2d;
+}
+
+a {
+    text-decoration: none;
+    color: $link-color;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $headline-color;
+
+    a {
+        color: $headline-color;
+    }
+}
+
+h1, h2 {
+    line-height: 1em;
+}
+
+.wp-caption-text {
+    font-style: italic;
+    font-size: .8em;
+    line-height: 1.5;
+    padding-right: 10px;
+}

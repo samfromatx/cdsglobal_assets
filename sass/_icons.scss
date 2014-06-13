@@ -1,0 +1,60 @@
+// Adapted from https://gist.github.com/chippper/6157025
+
+%icon, i {
+    font-family: 'icons';
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    font-size: 18px;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin icon($content, $position:"before") {
+    @if $position == after {
+        &::after {
+            @extend %icon;
+            content: $content;
+            @content;
+        }
+    } @else {
+        &::before {
+            @extend %icon;
+            content: $content;
+            @content;
+        }
+    }
+}
+
+$icon-menu: '\e000';
+$icon-caret-down: '\e001';
+$icon-search: '\e002';
+$icon-twitter: '\e003';
+$icon-facebook: '\e004';
+$icon-linkedin: '\e005';
+$icon-slideshare: '\e601';
+$icon-youtube: '\e602';
+$icon-youtubefull: '\e600';
+$icon-instagram: '\e605';
+$icon-vimeo: '\e604';
+$icon-vine: '\e603';
+$icon-rss: '\e006';
+$icon-gplus: '\e007';
+$icon-arrow-right: '\e008';
+$icon-white-paper: '\e009';
+$icon-webinar: '\e00a';
+$icon-video: '\e00b';
+$icon-forward-report: '\e00c';
+$icon-faq: '\e00d';
+$icon-executive-summary: '\e00e';
+$icon-data-sheet: '\e00f';
+$icon-case-study: '\e010';
+$icon-benchmark: '\e011';
+$icon-other: '\e012';
+$icon-demo: '\e013';
+$icon-assessment-tool: '\e014';
+$icon-caret-right: '\e015';
+$icon-infographic: '\e606';

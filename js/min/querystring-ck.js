@@ -1,0 +1,1 @@
+function querystring(e){for(var n=new RegExp("(?:\\?|&)"+e+"=(.*?)(?=&|$)","gi"),r=[],u;null!=(u=n.exec(document.location.search));)r.push(u[1]);return r}

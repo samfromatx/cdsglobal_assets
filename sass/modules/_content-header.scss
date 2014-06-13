@@ -1,0 +1,52 @@
+
+.main > .content header {
+    background-color: #eeeae0;
+    margin-bottom: 2em;
+
+    h1, h2 {
+        display: inline-block;
+        margin: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-weight: normal;
+        font-size: 2em;
+        line-height: 1.2em;
+    }
+
+    &.has-icon h1, &.has-icon h2 {
+        text-transform: lowercase;
+        padding-top: 0;
+        padding-bottom: 0;
+        line-height: 2em;
+
+        @include breakpoint($not-phone) {
+            margin-left: 20px;
+            font-size: 3.2em;
+            line-height: 2em;
+        }
+    }
+
+    .icon {
+        display: none;
+
+        @include breakpoint($not-phone) {
+            display: block;
+            @include circle-icon(80px);
+            background-color: #19acf1;
+            margin-top: 10px;
+        }
+    }
+
+
+    i.icon {
+        font-size: 52px;
+        padding: 14px;
+    }
+}
+
+.main > .content::after {
+    display: block;
+    background-color: #f8f5f0;
+    height: 80px;
+    content: " ";
+}

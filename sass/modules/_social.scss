@@ -1,0 +1,67 @@
+.social {
+    ul { @include inline-list(); }
+
+    a {
+        display: inline-block;
+        line-height: 1em;
+        font-size: 0;
+        border-radius: 24px;
+
+        &:hover {
+            color: #fff;
+        }
+
+        &::before {
+            display: inline-block;
+            width: 20px;
+            padding: 10px;
+            @extend %icon;
+            text-align: center;
+        }
+
+        &.twitter {
+            &:hover { background-color: #24aade; }
+            &::before { content: $icon-twitter; }
+        }
+        &.facebook {
+            &:hover { background-color: #3D5A98; }
+            &::before { content: $icon-facebook; }
+        }
+        &.linkedin {
+            &:hover { background-color: #0073A5; }
+            &::before { content: $icon-linkedin; }
+        }
+        &.rss {
+            &:hover { background-color: #edb922; }
+            &::before { content: $icon-rss; }
+        }
+        &.gplus {
+            &:hover { background-color: #dd4b39; }
+            &::before { content: $icon-gplus; }
+        }
+        &.slideshare {
+            &:hover { background-color: #01999A; }
+            &::before { content: $icon-slideshare; }
+        }
+        &.youtube {
+            &:hover { background-color: #dd4b39; }
+            &::before { content: $icon-youtube; }
+        }
+        &.youtubefull {
+            &:hover { background-color: #dd4b39; }
+            &::before { content: $icon-youtubefull; }
+        }
+        &.instagram {
+            &:hover { background-color: #1D597D; }
+            &::before { content: $icon-instagram; }
+        }
+        &.vimeoico {
+            &:hover { background-color: #67B7E6; }
+            &::before { content: $icon-vimeo; }
+        }
+        &.vineico {
+            &:hover { background-color: #00B48A; }
+            &::before { content: $icon-vine; }
+        }
+    }   
+}

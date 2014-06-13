@@ -1,0 +1,37 @@
+
+.widget.industries {
+    dl {
+        margin: 0;
+        font-size: 1.2em;
+        font-weight: 300;
+    }
+
+    dt {
+        margin-top: 10px;
+        font-size: 1.4em;
+        text-transform: lowercase;
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        &.active a {
+            font-weight: normal;
+            @include icon($icon-caret-down) {
+                margin-right: 5px;
+            }
+        }
+
+        &:not(.active) a {
+            color: #352821;
+            @include icon($icon-caret-right) {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    dd {
+        font-style: italic;
+        margin-lefT: 0;
+    }
+}

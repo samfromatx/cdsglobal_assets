@@ -1,0 +1,62 @@
+
+.resource.benchmarking-report i::before { content: $icon-benchmark; }
+.resource.forward-report i::before { content: $icon-forward-report; }
+.resource.data-sheet i::before { content: $icon-data-sheet; }
+.resource.case-study i::before { content: $icon-case-study; }
+.resource.video i::before { content: $icon-video; }
+.resource.webinar i::before { content: $icon-webinar; }
+.resource.white-paper i::before { content: $icon-white-paper; }
+.resource.executive-summary i::before { content: $icon-executive-summary; }
+.resource.faq i::before { content: $icon-faq; }
+.resource.other i::before { content: $icon-other; }
+.resource.demo i::before { content: $icon-demo; }
+.resource.assessment-tool i::before { content: $icon-assessment-tool; }
+.resource.infographic i::before { content: $icon-infographic; }
+
+.resource {
+    .gated {
+        display: none;
+    }
+
+    .loading {
+    // Work in progress
+        position: relative;
+
+        &::after {
+            content: ' ';
+            position: absolute;
+            background: rgba(0, 0, 0, .3);
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
+.resource-filter {
+    margin-top: 10px;
+    label {
+        text-transform: uppercase;
+        display: block;
+        font-size: .8em;
+        font-family: $headline-font;
+    }
+
+    .dropdown {
+        margin-bottom: 10px;
+        margin-right: 10px;
+        vertical-align: top;
+    }
+
+    .reset {
+        display: inline-block;
+        vertical-align: top;
+        line-height: 2.5em;
+        margin-top: 8px;
+
+        a {
+            color: $secondary-link-color;
+        }
+    }
+}

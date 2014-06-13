@@ -1,0 +1,2 @@
+(function(){var n,e,i,t,r;n=jQuery,e=n(".banner img"),e.length&&(t=n("body.home").length>0,i=e.width(),r=function(){var r;if(!t)return r=n(window).width(),1e3>r&&(r=1e3),e.each(function(){var e;return e=n(this),e.css("left",-1*(i-r)/2+"px")})},n(window).on("resize",r),r())}).call(this);
+//# sourceMappingURL=./banner.map

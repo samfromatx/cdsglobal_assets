@@ -1,0 +1,54 @@
+
+@mixin placeholder {
+    @each $prefix in "&::-webkit-input", "&:moz", "&::-moz", "&:-ms-input" {
+        #{$prefix}-placeholder {
+            @content;
+        }
+    }
+}
+
+@mixin image-replace($image) {
+    background-color: transparent;
+    background-image: url($image);
+    border: 0;
+    overflow: hidden;
+
+    &::before {
+        content: " ";
+        display: block;
+        width: 0;
+        height: 150%;
+    }
+}
+
+%circle-arrow {
+    border-radius: 24px;
+    width: 18px;
+    padding: 10px;
+    @extend %icon;
+    font-size: 18px;
+    text-align: center;
+    content: $icon-arrow-right;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@mixin dropdown($width) {
+    overflow: hidden;
+    width: $width;
+
+    select {
+        width: $width + 30px;
+        background: transparent;
+        padding: 5px;
+        border: 0;
+        @include appearance(none);
+        @content;
+
+        &:focus {
+            outline: 0;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+
+@mixin circle-icon($diameter) {
+    position: relative;
+    float: left;
+    width: $diameter;
+    height: $diameter;
+    border-radius: $diameter / 2;
+
+    img {
+        $diameter: $diameter * 2/3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: $diameter;
+        height: $diameter;
+        margin-top: -$diameter / 2;
+        margin-left: -$diameter / 2;
+    }
+}
+
+i.icon {
+    @include box-sizing(border-box);
+    display: inline-block;
+    vertical-align: top;
+    color: #fff;
+    font-size: 70px;
+    padding: 16px;
+}

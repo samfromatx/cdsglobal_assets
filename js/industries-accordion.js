@@ -1,0 +1,2 @@
+(function(){var a,t,d,e,s;a=jQuery,t=a(".industries"),d=t.find("dt"),d.next("dd").hide(),s=Math.floor(Math.random()*d.length),e=d.slice(s,s+1),e.addClass("active"),e.next("dd").show(),d.find("a").click(function(){var t,e;return t=a(this),e=t.parent(),e.hasClass("active")||(d.removeClass("active"),d.next("dd").slideUp("fast"),e.addClass("active"),e.next("dd").slideDown("fast")),!1})}).call(this);
+//# sourceMappingURL=./industries-accordion.map

@@ -1,0 +1,29 @@
+.img-responsive {
+	max-width: none;
+}
+.event-marquee-foreground-image {
+	overflow: hidden;
+	width: 100%;
+}
+
+@media (max-width: 861px) {
+	.center-block {
+		//width: 100%;
+		//height: auto;
+	}
+
+	.center-block {
+	  display: block;
+	  -moz-box-sizing: border-box;
+	  box-sizing: border-box;
+	  background: url(https://dl.dropboxusercontent.com/u/504522/Preferred_showcase_web_banners_850.png) no-repeat;
+	  width: 100%; /* Width of new image */
+	  height: auto; /* Height of new image */
+	  left: 0px; /* Equal to width of new image */\
+	  position: relative;
+	}
+	.event-marquee-foreground-image {
+		height: auto;
+	}
+	
+}

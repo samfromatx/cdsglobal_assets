@@ -1,0 +1,73 @@
+form {
+    margin-bottom: 40px;
+
+    // Remove focus outlines, specially for blue glow on OS X
+    input:focus, select:focus, textarea:focus {
+        outline: none;
+    }
+
+    %field {
+        width: 100%;
+        margin-top: 10px;
+        font-weight: bold;
+        padding: .5em;
+        line-height: 1.3em;
+        @include box-sizing(border-box);
+
+        @include breakpoint($not-phone) {
+            width: 60%;
+        }
+    }
+
+    .formtext {
+	    @include breakpoint($not-phone) {
+            width: 60%;
+            margin-top: 10px;
+        }
+    }
+
+    input[type=text] {
+        @extend %field;
+
+        border: 0;
+        background-color: lighten(#5c5a57, 55%);
+        @include transition(all 150ms ease-in-out);
+
+        &:hover, &:focus {
+            box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+        }
+
+        &:focus {
+            background-color: #5c5a57;
+            color: white;
+        }
+    }
+
+    input[type=search], input[type=email], input[type=tel], textarea {
+        @extend input[type=text];
+    }
+
+    select {
+        @extend %field;
+        padding: 0;
+    }
+
+    .contact-dropdown {
+        @extend select;
+        border: 0;
+        background-color: lighten(#5c5a57, 55%);
+        padding: .5em;
+    }
+
+    input[type=submit] {
+        @extend input[type=text];
+
+        width: 100%;
+
+        @include breakpoint($not-phone) {
+            width: auto;
+            padding: .5em 1.2em;
+            display: inline-block;
+        }
+    }
+}

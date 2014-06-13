@@ -1,0 +1,246 @@
+
+#tools {
+    background-color: #777165;
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 0 $body-margin;
+    position: relative;
+
+    @include breakpoint($not-phone) {
+        background-color: #fcfcfa;
+        border-bottom: 1px dotted #ccbba9;
+        text-align: right;
+
+        > * {
+            vertical-align: top;
+        }
+    }
+
+    .menu-button {
+        @include icon($icon-menu) {
+            font-size: 3em;
+            line-height: 1.35em;
+        }
+        text-align: center;
+        color: #a49f94;
+        cursor: pointer;
+
+        width: 50px;
+        height: 50px;
+        float: left;
+
+        @include breakpoint($not-phone) {
+            display: none;
+        }
+    }
+
+    .links {
+        display: none;
+
+        @include breakpoint($not-phone) {
+            display: inline-block;
+
+            @include inline-list();
+
+            li {
+                margin-left: 20px;
+            }
+
+            a {
+                padding: 10px;
+                border-radius: 16px;
+                background-color: #b5ad9b;
+                color: #fff;
+
+                &:hover {
+                    background-color: #5c5a57;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .country {
+        $color: #e8e3db;
+        margin-right: 15px;
+        color: $color;
+        background-color: transparent;
+
+        @include dropdown(120px) {
+            color: $color;
+            font-family: $headline-font;
+            font-size: 1.1em;
+            margin-left: 5px;
+        }
+
+        &::after {
+            top: 16px;
+            right: 0;
+            color: $color;
+            display: block;
+            pointer-events: none;
+        }
+
+        @include breakpoint($not-phone) {
+            $color: #c1ac96;
+            color: $color;
+
+            @include dropdown(180px) {
+                color: $color;
+                font-family: $body-font;
+            }
+
+            &::after {
+                top: 2px;
+                right: 10px;
+                font-size: 24px;
+                color: $color;
+            }
+        }
+    }
+
+    .search {
+        position: absolute;
+        width: 3.0em;
+        top: 54px;
+        right: 1em;
+        font-size: 1.3em;
+        margin-bottom: 0;
+
+        &.open {
+            @include breakpoint($phone-only) {
+                width: 58%;
+            }
+        }
+
+        input {
+            margin: 0;
+            padding: 10px;
+            padding-left: 2.4em;
+            border: none;
+            background-color: #eae5dd;
+            color: $body-color;
+            @include box-sizing(border-box);
+
+            // Disable rounded corners on iOS 7
+            border-radius: 0;
+            -webkit-appearance: none;
+        }
+
+        @include icon($icon-search) {
+            position: absolute;
+            font-size: 26px;
+            top: .4em;
+            left: .4em;
+            color: #c1ac96;
+            pointer-events: none;
+        }
+
+        @include breakpoint($not-phone) {
+            position: relative;
+            display: inline-block;
+            width: 200px;
+            text-align: right;
+            font-size: 12px;
+            top: 0;
+            right: 0;
+
+            &::before {
+                font-size: 16px;
+                top: 1em;
+                left: .5em;
+            }
+
+            input {
+                display: inline-block;
+                width: 100%;
+                margin-right: 25px;
+                padding: 8px;
+                padding-left: 30px;
+                border: 2px solid #dad7cf;
+                border-radius: 16px;
+                text-align: left;
+                color: #c1ac96;
+                text-transform: none;
+                box-shadow: 1px 2px 2px 0px rgba(175, 166, 147, 0.07);
+                background-color: transparent;
+
+                @include placeholder() {
+                    color: #c1ac96;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+header {
+    background-color: #f7f4ee;
+    padding: 0 $body-margin;
+
+    .logo {
+        display: inline-block;
+        a {
+            @include image-replace('images/logo.png');
+            display: inline-block;
+            margin-left: 10px;
+            width: 101px;
+            height: 50px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 82px 32px;
+
+            @include breakpoint($not-phone) {
+                width: 202px;
+                height: 100px;
+                background-size: 165px 64px;
+            }
+        }
+    }
+
+    nav {
+        display: none;
+
+        @include breakpoint($not-phone) {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 40px;
+            float: right;
+
+            ul {
+                @include inline-list();
+                height: 100px;
+
+                .current-page-ancestor a, .current-menu-item a {
+                    color: $link-color;
+                }
+
+                a {
+                    margin-right: 20px;
+                    color: #312e2a;
+
+                    &:hover {
+                        color: $link-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .social {
+        display: none;
+        float: right;
+        margin: 30px 5px 0 20px;
+
+        a {
+            color: #fff;
+            background-color: #b5ad9b;
+        }
+
+        @include breakpoint($widescreen) {
+            display: inline-block;
+        }
+    }
+}

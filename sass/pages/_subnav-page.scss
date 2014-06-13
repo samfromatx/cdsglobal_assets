@@ -1,0 +1,46 @@
+.primary {
+
+    .content {
+        @include breakpoint($not-phone) {
+            float: left;
+            width: 70%;
+            margin-left: 5%;
+        }
+    }
+
+    nav {
+        @include breakpoint($not-phone) {
+            float: left;
+            width: 25%;
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+            width: 100%;
+
+            li {
+                background-color: #b5ad9b;
+                padding: 5px 10px;
+                border-bottom: #fff 1px solid;
+
+                &:hover, &.active {
+                    background-color: #5c5a57;
+                }
+
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+
+            a {
+                display: block;
+                color: #fff;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

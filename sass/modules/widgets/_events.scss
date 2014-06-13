@@ -1,0 +1,63 @@
+.widget.events {
+    h3 a:hover {
+        text-decoration: underline;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    .date {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        overflow: hidden;
+        float: left;
+        color: #f8f5f0;
+
+        background-color: #1cadf1;
+
+        span {
+            width: 60px;
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1.2em;
+            font-weight: bold;
+            line-height: 1em;
+
+            &.month {
+                margin-top: 10px;
+            }
+
+            &.day {
+                font-size: 2em;
+            }
+        }
+    }
+
+    .content {
+        min-height: 60px;
+        margin-left: 75px;
+
+        h3 {
+            margin: 0;
+        }
+
+        a {
+            color: #645a49;
+        }
+
+        p {
+            margin: 0;
+            font-style: italic;
+        }
+
+    }
+}

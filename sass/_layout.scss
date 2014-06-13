@@ -1,0 +1,88 @@
+
+// Breakpoint
+$tablet: 767px;
+$desktop: 1023px;
+$breakpoint-no-query-fallbacks: true;
+$phone-only: max-width $tablet;
+$not-phone: $tablet, 'no-query' '.lt-ie9';
+$tablet-only: $tablet $desktop;
+$widescreen: $desktop+1, 'no-query' '.lt-ie9';
+$extrawide: 1280px;
+$breakpoint-to-ems: true;
+
+$body-margin: 3%;
+$menu-transition-speed: 500ms;
+
+.container {
+    overflow: hidden;
+}
+
+.content {
+    max-width: 100%;
+    @include pie-clearfix;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+.primary {
+    margin: 0 $body-margin;
+    @include breakpoint($widescreen) {
+        float: left;
+        width: 70%;
+        margin-right: 0;
+    }
+}
+
+.secondary {
+    margin: 0 $body-margin;
+    @include breakpoint($widescreen) {
+        float: right;
+        width: 20%;
+        margin-left: 0;
+    }
+}
+
+// WordPress editor classes
+.alignright {
+    float: right;
+}
+
+.alignleft {
+    float: left;
+}
+
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+img.alignright, .wp-caption.alignright {
+    margin: 2em 1em 1em 1em;
+}
+img.alignleft, .wp-caption.alignleft {
+    margin: 1em 1em 0 0;
+}
+
+hr.fadeline {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(181,173,155,0), rgba(181,173,155,0.75), rgba(181,173,155,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(181,173,155,0), rgba(181,173,155,0.75), rgba(181,173,155,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(181,173,155,0), rgba(181,173,155,0.75), rgba(181,173,155,0)); 
+    background-image:      -o-linear-gradient(left, rgba(181,173,155,0), rgba(181,173,155,0.75), rgba(181,173,155,0)); 
+}
+.addthis_toolbox {
+    padding: 10px 0 0 0;
+}
+.printonly {
+    display: none;
+}

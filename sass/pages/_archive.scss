@@ -1,0 +1,34 @@
+.archive .primary {
+    h3 {
+        margin-bottom: 0;
+    }
+
+    .pagination {
+        .pages {
+            text-align: center;
+        }
+    }
+}
+
+.meta {
+    .avatar {
+        display: inline;
+        vertical-align: middle;
+        margin-right: 20px;
+    }
+
+    span {
+        font-family: Roboto, sans-serif;
+        font-size: .75em;
+        text-transform: uppercase;
+
+        &::after {
+            content: "|";
+            margin: 0 10px;
+        }
+
+        &:last-child::after {
+            content: "";
+        }
+    }
+}

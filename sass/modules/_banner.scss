@@ -1,0 +1,21 @@
+
+.banner {
+    background-color: #f4e9d4;
+    height: 246px;
+    position: relative;
+    display: none;
+
+    @include breakpoint($not-phone) {
+        display: block;
+    }
+
+    img {
+        position: absolute;
+        max-width: none;
+        bottom: 0;
+    }
+}
+
+.home .banner {
+    display: block;
+}

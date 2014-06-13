@@ -1,0 +1,2 @@
+(function(){var n,o,r;n=jQuery,r=n(".search"),o=r.find("input"),o.on("focus",function(){return r.addClass("open")}),o.on("blur",function(){return r.removeClass("open")})}).call(this);
+//# sourceMappingURL=./search.map

@@ -1,0 +1,28 @@
+
+footer {
+    color: #867e70;
+    background-color: #f0ece2;
+    padding: 30px 10px 100px 10px;
+    clear: both;
+
+    nav {
+        display: inline;
+
+        ul {
+            @include inline-list();
+
+            li::before {
+                content: "|";
+                margin: 0 5px;
+            }
+
+            a {
+                color: #867e70;
+            }
+        }
+    }
+
+    .social a {
+        color: $body-color;
+    }
+}
