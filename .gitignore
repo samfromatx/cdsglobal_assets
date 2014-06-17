@@ -1,2 +1,2 @@
-*.codekit
-*.scssc
+config.codekit
+*.DS_Store
