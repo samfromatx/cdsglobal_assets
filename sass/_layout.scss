@@ -75,14 +75,23 @@ img.alignleft, .wp-caption.alignleft {
 hr.fadeline {
     border: 0;
     height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(181,173,155,0), rgba(181,173,155,0.75), rgba(181,173,155,0)); 
-    background-image:    -moz-linear-gradient(left, rgba(181,173,155,0), rgba(181,173,155,0.75), rgba(181,173,155,0)); 
-    background-image:     -ms-linear-gradient(left, rgba(181,173,155,0), rgba(181,173,155,0.75), rgba(181,173,155,0)); 
-    background-image:      -o-linear-gradient(left, rgba(181,173,155,0), rgba(181,173,155,0.75), rgba(181,173,155,0)); 
+    background-image: -webkit-linear-gradient(left, rgba(181,173,155,0), rgba(181,173,155,0.75), rgba(181,173,155,0));
+    background-image:    -moz-linear-gradient(left, rgba(181,173,155,0), rgba(181,173,155,0.75), rgba(181,173,155,0));
+    background-image:     -ms-linear-gradient(left, rgba(181,173,155,0), rgba(181,173,155,0.75), rgba(181,173,155,0));
+    background-image:      -o-linear-gradient(left, rgba(181,173,155,0), rgba(181,173,155,0.75), rgba(181,173,155,0));
 }
 .addthis_toolbox {
     padding: 10px 0 0 0;
 }
 .printonly {
     display: none;
+}
+// Hide from screen but still make accessible
+.hidefromscreen {
+   position: absolute !important;
+   top: -9999px !important;
+   left: -9999px !important;
+}
+.hidetextfromscreen {
+	text-indent: -9999px;
 }
