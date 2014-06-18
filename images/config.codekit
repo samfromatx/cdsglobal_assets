@@ -13,6 +13,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/banners\/hp_banner_1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 220274,
+		"inputAbbreviatedPath": "\/banners\/hp_banner_1.png",
+		"outputAbbreviatedPath": "\/banners\/hp_banner_1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/banners\/hp_banner_2.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -23,6 +34,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
+		},
+	"\/banners\/hp_banner_2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 244565,
+		"inputAbbreviatedPath": "\/banners\/hp_banner_2.png",
+		"outputAbbreviatedPath": "\/banners\/hp_banner_2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/banners\/hp_banner_3.jpg": {
 		"fileType": 16384,
@@ -35,6 +57,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/banners\/hp_banner_3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 176754,
+		"inputAbbreviatedPath": "\/banners\/hp_banner_3.png",
+		"outputAbbreviatedPath": "\/banners\/hp_banner_3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/banners\/hp_banner_4.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -46,6 +79,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/banners\/hp_banner_4.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 202058,
+		"inputAbbreviatedPath": "\/banners\/hp_banner_4.png",
+		"outputAbbreviatedPath": "\/banners\/hp_banner_4.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/banners\/hp_banner_5.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -56,6 +100,72 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
+		},
+	"\/banners\/hp_banner_5.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3.33019e+06,
+		"inputAbbreviatedPath": "\/banners\/hp_banner_5.png",
+		"outputAbbreviatedPath": "\/banners\/hp_banner_5.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/banners\/uncompressed\/hp_banner_1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4.43916e+06,
+		"inputAbbreviatedPath": "\/banners\/uncompressed\/hp_banner_1.png",
+		"outputAbbreviatedPath": "\/banners\/uncompressed\/hp_banner_1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/banners\/uncompressed\/hp_banner_2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4.43916e+06,
+		"inputAbbreviatedPath": "\/banners\/uncompressed\/hp_banner_2.png",
+		"outputAbbreviatedPath": "\/banners\/uncompressed\/hp_banner_2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/banners\/uncompressed\/hp_banner_3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4.43916e+06,
+		"inputAbbreviatedPath": "\/banners\/uncompressed\/hp_banner_3.png",
+		"outputAbbreviatedPath": "\/banners\/uncompressed\/hp_banner_3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/banners\/uncompressed\/hp_banner_4.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4.43916e+06,
+		"inputAbbreviatedPath": "\/banners\/uncompressed\/hp_banner_4.png",
+		"outputAbbreviatedPath": "\/banners\/uncompressed\/hp_banner_4.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/banners\/uncompressed\/hp_banner_5.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4.43916e+06,
+		"inputAbbreviatedPath": "\/banners\/uncompressed\/hp_banner_5.png",
+		"outputAbbreviatedPath": "\/banners\/uncompressed\/hp_banner_5.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/email\/download_case_study.png": {
 		"fileType": 32768,
@@ -75,6 +185,28 @@
 		"initialSize": 2583,
 		"inputAbbreviatedPath": "\/email\/download_white_paper.png",
 		"outputAbbreviatedPath": "\/email\/download_white_paper.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/email\/stay-informed-lg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2291,
+		"inputAbbreviatedPath": "\/email\/stay-informed-lg.png",
+		"outputAbbreviatedPath": "\/email\/stay-informed-lg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/email\/stay-informed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1925,
+		"inputAbbreviatedPath": "\/email\/stay-informed.png",
+		"outputAbbreviatedPath": "\/email\/stay-informed.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -682,7 +814,29 @@
 		"outputAbbreviatedPath": "\/web\/CAREERS-image.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
+		},
+	"\/web\/hp_banner_1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4.43916e+06,
+		"inputAbbreviatedPath": "\/web\/hp_banner_1.png",
+		"outputAbbreviatedPath": "\/web\/hp_banner_1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/web\/The-Doe-Fund-Infographic.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/web\/The-Doe-Fund-Infographic.png",
+		"outputAbbreviatedPath": "\/web\/The-Doe-Fund-Infographic.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
 		}
 	},
 "hooks": [
