@@ -41,6 +41,15 @@ iframe {
     }
 }
 
+.primary-wide {
+    margin: 0 $body-margin;
+    @include breakpoint($widescreen) {
+        float: left;
+        width: 90%;
+        margin-right: 0;
+    }
+}
+
 .secondary {
     margin: 0 $body-margin;
     @include breakpoint($widescreen) {
