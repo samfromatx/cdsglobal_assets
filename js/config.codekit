@@ -7,10 +7,10 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/banner.js",
-		"outputAbbreviatedPath": "\/min\/banner-ck.js",
+		"outputAbbreviatedPath": "\/banner-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
+		"outputStyle": 2,
 		"syntaxCheckerStyle": 0
 		},
 	"\/contact.js": {
@@ -18,10 +18,10 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/contact.js",
-		"outputAbbreviatedPath": "\/min\/contact-ck.js",
+		"outputAbbreviatedPath": "\/contact-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
+		"outputStyle": 2,
 		"syntaxCheckerStyle": 0
 		},
 	"\/country-select.js": {
@@ -29,10 +29,10 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/country-select.js",
-		"outputAbbreviatedPath": "\/min\/country-select-ck.js",
+		"outputAbbreviatedPath": "\/country-select-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
+		"outputStyle": 2,
 		"syntaxCheckerStyle": 0
 		},
 	"\/dropdown.js": {
@@ -40,10 +40,10 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dropdown.js",
-		"outputAbbreviatedPath": "\/min\/dropdown-ck.js",
+		"outputAbbreviatedPath": "\/dropdown-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
+		"outputStyle": 2,
 		"syntaxCheckerStyle": 0
 		},
 	"\/gated-form.js": {
@@ -51,10 +51,10 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/gated-form.js",
-		"outputAbbreviatedPath": "\/min\/gated-form-ck.js",
+		"outputAbbreviatedPath": "\/gated-form-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
+		"outputStyle": 2,
 		"syntaxCheckerStyle": 0
 		},
 	"\/home.js": {
@@ -62,10 +62,10 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/home.js",
-		"outputAbbreviatedPath": "\/min\/home-ck.js",
+		"outputAbbreviatedPath": "\/home-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
+		"outputStyle": 2,
 		"syntaxCheckerStyle": 0
 		},
 	"\/industries-accordion.js": {
@@ -73,10 +73,10 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/industries-accordion.js",
-		"outputAbbreviatedPath": "\/min\/industries-accordion-ck.js",
+		"outputAbbreviatedPath": "\/industries-accordion-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
+		"outputStyle": 2,
 		"syntaxCheckerStyle": 0
 		},
 	"\/min\/querystring-ck.js": {
@@ -84,10 +84,10 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/min\/querystring-ck.js",
-		"outputAbbreviatedPath": "\/min\/min\/querystring-ck-ck.js",
+		"outputAbbreviatedPath": "\/min\/querystring-ck-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
+		"outputStyle": 2,
 		"syntaxCheckerStyle": 0
 		},
 	"\/min\/site.js": {
@@ -95,10 +95,10 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/min\/site.js",
-		"outputAbbreviatedPath": "\/min\/min\/site-ck.js",
+		"outputAbbreviatedPath": "\/min\/site-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
+		"outputStyle": 2,
 		"syntaxCheckerStyle": 0
 		},
 	"\/mobile-nav.js": {
@@ -106,10 +106,10 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/mobile-nav.js",
-		"outputAbbreviatedPath": "\/min\/mobile-nav-ck.js",
+		"outputAbbreviatedPath": "\/mobile-nav-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
+		"outputStyle": 2,
 		"syntaxCheckerStyle": 0
 		},
 	"\/plugins.js": {
@@ -117,10 +117,10 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/plugins.js",
-		"outputAbbreviatedPath": "\/min\/plugins-ck.js",
+		"outputAbbreviatedPath": "\/plugins-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
+		"outputStyle": 2,
 		"syntaxCheckerStyle": 0
 		},
 	"\/querystring.js": {
@@ -128,10 +128,10 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/querystring.js",
-		"outputAbbreviatedPath": "\/min\/querystring-ck.js",
+		"outputAbbreviatedPath": "\/querystring-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
+		"outputStyle": 2,
 		"syntaxCheckerStyle": 0
 		},
 	"\/resource-filter.js": {
@@ -139,10 +139,10 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/resource-filter.js",
-		"outputAbbreviatedPath": "\/min\/resource-filter-ck.js",
+		"outputAbbreviatedPath": "\/resource-filter-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
+		"outputStyle": 2,
 		"syntaxCheckerStyle": 0
 		},
 	"\/resource_form.js": {
@@ -150,10 +150,10 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/resource_form.js",
-		"outputAbbreviatedPath": "\/min\/resource_form-ck.js",
+		"outputAbbreviatedPath": "\/resource_form-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
+		"outputStyle": 2,
 		"syntaxCheckerStyle": 0
 		},
 	"\/search.js": {
@@ -161,10 +161,10 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/search.js",
-		"outputAbbreviatedPath": "\/min\/search-ck.js",
+		"outputAbbreviatedPath": "\/search-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
+		"outputStyle": 2,
 		"syntaxCheckerStyle": 0
 		},
 	"\/site.js": {
@@ -172,10 +172,10 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/site.js",
-		"outputAbbreviatedPath": "\/Users\/stwhite\/websites\/sites\/cds_global\/content\/themes\/cds\/javascripts\/site.js",
+		"outputAbbreviatedPath": "\/Users\/SamWhite\/www\/sites\/cds_global\/content\/themes\/cds\/javascripts\/site.js",
 		"outputPathIsOutsideProject": 1,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 1,
+		"outputStyle": 2,
 		"syntaxCheckerStyle": 0
 		}
 	},
@@ -398,7 +398,7 @@
 		},
 	"coffeeMinifyOutput": 1,
 	"coffeeOutputStyle": 0,
-	"coffeeSyntaxCheckerStyle": 1,
+	"coffeeSyntaxCheckerStyle": 0,
 	"externalServerAddress": "http:\/\/localhost:8888",
 	"externalServerPreviewPathAddition": "",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
@@ -422,9 +422,9 @@
 	"javascriptAutoOutputPathRelativePath": "\/min",
 	"javascriptAutoOutputPathReplace1": "",
 	"javascriptAutoOutputPathReplace2": "",
-	"javascriptAutoOutputPathStyle": 2,
+	"javascriptAutoOutputPathStyle": 0,
 	"javascriptCreateSourceMap": 1,
-	"javascriptOutputStyle": 1,
+	"javascriptOutputStyle": 2,
 	"javascriptOutputSuffix": "-ck",
 	"javascriptSyntaxCheckerStyle": 0,
 	"jsCheckerReservedNamesString": "",
