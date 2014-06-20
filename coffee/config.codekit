@@ -8,12 +8,12 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/banner.coffee",
-		"minifyOutput": 1,
-		"outputAbbreviatedPath": "\/Users\/stwhite\/websites\/assets\/js\/banner.js",
+		"minifyOutput": 0,
+		"outputAbbreviatedPath": "\/Users\/SamWhite\/www\/assets\/js\/banner.js",
 		"outputPathIsOutsideProject": 1,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
 	"\/contact.coffee": {
 		"createSourceMap": 1,
@@ -21,12 +21,12 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/contact.coffee",
-		"minifyOutput": 1,
-		"outputAbbreviatedPath": "\/Users\/stwhite\/websites\/assets\/js\/contact.js",
+		"minifyOutput": 0,
+		"outputAbbreviatedPath": "\/Users\/SamWhite\/www\/assets\/js\/contact.js",
 		"outputPathIsOutsideProject": 1,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
 	"\/country-select.coffee": {
 		"createSourceMap": 1,
@@ -34,12 +34,12 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/country-select.coffee",
-		"minifyOutput": 1,
-		"outputAbbreviatedPath": "\/Users\/stwhite\/websites\/assets\/js\/country-select.js",
+		"minifyOutput": 0,
+		"outputAbbreviatedPath": "\/Users\/SamWhite\/www\/assets\/js\/country-select.js",
 		"outputPathIsOutsideProject": 1,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
 	"\/dropdown.coffee": {
 		"createSourceMap": 1,
@@ -47,12 +47,12 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dropdown.coffee",
-		"minifyOutput": 1,
-		"outputAbbreviatedPath": "\/Users\/stwhite\/websites\/assets\/js\/dropdown.js",
+		"minifyOutput": 0,
+		"outputAbbreviatedPath": "\/Users\/SamWhite\/www\/assets\/js\/dropdown.js",
 		"outputPathIsOutsideProject": 1,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
 	"\/event-datepicker.coffee": {
 		"createSourceMap": 1,
@@ -60,12 +60,12 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/event-datepicker.coffee",
-		"minifyOutput": 1,
+		"minifyOutput": 0,
 		"outputAbbreviatedPath": "\/event-datepicker.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
 	"\/gated-form.coffee": {
 		"createSourceMap": 1,
@@ -73,12 +73,12 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/gated-form.coffee",
-		"minifyOutput": 1,
-		"outputAbbreviatedPath": "\/Users\/stwhite\/websites\/assets\/js\/gated-form.js",
+		"minifyOutput": 0,
+		"outputAbbreviatedPath": "\/Users\/SamWhite\/www\/assets\/js\/gated-form.js",
 		"outputPathIsOutsideProject": 1,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
 	"\/home.coffee": {
 		"createSourceMap": 1,
@@ -86,12 +86,12 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/home.coffee",
-		"minifyOutput": 1,
-		"outputAbbreviatedPath": "\/Users\/stwhite\/websites\/assets\/js\/home.js",
+		"minifyOutput": 0,
+		"outputAbbreviatedPath": "\/Users\/SamWhite\/www\/assets\/js\/home.js",
 		"outputPathIsOutsideProject": 1,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
 	"\/industries-accordion.coffee": {
 		"createSourceMap": 1,
@@ -99,12 +99,12 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/industries-accordion.coffee",
-		"minifyOutput": 1,
-		"outputAbbreviatedPath": "\/Users\/stwhite\/websites\/assets\/js\/industries-accordion.js",
+		"minifyOutput": 0,
+		"outputAbbreviatedPath": "\/Users\/SamWhite\/www\/assets\/js\/industries-accordion.js",
 		"outputPathIsOutsideProject": 1,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
 	"\/mobile-nav.coffee": {
 		"createSourceMap": 1,
@@ -112,12 +112,12 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/mobile-nav.coffee",
-		"minifyOutput": 1,
-		"outputAbbreviatedPath": "\/Users\/stwhite\/websites\/assets\/js\/mobile-nav.js",
+		"minifyOutput": 0,
+		"outputAbbreviatedPath": "\/Users\/SamWhite\/www\/assets\/js\/mobile-nav.js",
 		"outputPathIsOutsideProject": 1,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
 	"\/resource-filter.coffee": {
 		"createSourceMap": 1,
@@ -125,12 +125,12 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/resource-filter.coffee",
-		"minifyOutput": 1,
-		"outputAbbreviatedPath": "\/Users\/stwhite\/websites\/assets\/js\/resource-filter.js",
+		"minifyOutput": 0,
+		"outputAbbreviatedPath": "\/Users\/SamWhite\/www\/assets\/js\/resource-filter.js",
 		"outputPathIsOutsideProject": 1,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
 	"\/resource_form.coffee": {
 		"createSourceMap": 1,
@@ -138,23 +138,12 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/resource_form.coffee",
-		"minifyOutput": 1,
-		"outputAbbreviatedPath": "\/Users\/stwhite\/websites\/assets\/js\/resource_form.js",
+		"minifyOutput": 0,
+		"outputAbbreviatedPath": "\/Users\/SamWhite\/www\/assets\/js\/resource_form.js",
 		"outputPathIsOutsideProject": 1,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
-		},
-	"\/resource_form.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/resource_form.js",
-		"outputAbbreviatedPath": "\/min\/resource_form-ck.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
 	"\/search.coffee": {
 		"createSourceMap": 1,
@@ -162,12 +151,12 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/search.coffee",
-		"minifyOutput": 1,
-		"outputAbbreviatedPath": "\/Users\/stwhite\/websites\/assets\/js\/search.js",
+		"minifyOutput": 0,
+		"outputAbbreviatedPath": "\/Users\/SamWhite\/www\/assets\/js\/search.js",
 		"outputPathIsOutsideProject": 1,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		}
 	},
 "hooks": [
@@ -307,9 +296,9 @@
 			"flagValue": -1
 			}
 		},
-	"coffeeMinifyOutput": 1,
+	"coffeeMinifyOutput": 0,
 	"coffeeOutputStyle": 0,
-	"coffeeSyntaxCheckerStyle": 1,
+	"coffeeSyntaxCheckerStyle": 0,
 	"externalServerAddress": "http:\/\/localhost:8888",
 	"externalServerPreviewPathAddition": "",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
@@ -335,7 +324,7 @@
 	"javascriptAutoOutputPathReplace2": "",
 	"javascriptAutoOutputPathStyle": 2,
 	"javascriptCreateSourceMap": 1,
-	"javascriptOutputStyle": 1,
+	"javascriptOutputStyle": 0,
 	"javascriptOutputSuffix": "-ck",
 	"javascriptSyntaxCheckerStyle": 1,
 	"jsCheckerReservedNamesString": "",

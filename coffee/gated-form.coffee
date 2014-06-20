@@ -56,6 +56,7 @@ unlockAsset = (autoDownload) ->
 
 # This function gets automatically called for every Eloqua data lookup.
 # It needs to do multiple things, so we rely on the call order to switch behavior
+
 lookupNum = 0
 window.SetElqContent = ->
     switch lookupNum
@@ -68,9 +69,13 @@ lookupEloquaData = ->
     email = GetElqContentPersonalizationValue 'V_ElqEmailAddress'
     lookupValue = "<C_EmailAddress>#{ email }</C_EmailAddress>"
     _elqQ.push ['elqDataLookup', 'b25edf2517d04bea9ecdc4866011e11e', lookupValue]
-    localStorage.setItem("elqVEmail", email)
-    if localStorage.getItem("elqProg2") == null
-        localStorage.setItem("elqProg2", "false")
+    if email == ''
+    	$('#prog1').hide()
+    	$('#prog1 input, #prog1 select').each ->
+	    	$(this).removeAttr('required')
+    	$('#prog2').hide()
+    	$('#prog2 input, #prog2 select').each ->
+	    	$(this).removeAttr('required')
 
 hideFilledFields = ->
     if typeof GetElqCustomerGUID == 'function'
@@ -78,14 +83,46 @@ hideFilledFields = ->
         guidField.val GetElqCustomerGUID
     fieldQuery = ':input:visible:not([type=submit])'
     fields = gate.find fieldQuery
+    progZero = false
+    progOne = false
+    progTwo = false
     fields.each (i, el) ->
         el = $ el
         apiName = el.data 'api-name'
+        progStage = el.data 'prog-stage'
         if value = GetElqContentPersonalizationValue apiName
             if el.prop('name') == 'emailAddress'
                 el.val value
+                #console.log(el.prop('name')+'-'+progStage)
+                #console.log(gate.find(fieldQuery).length)
             else
                 el.remove()
+                #console.log(el.prop('name')+'-'+progStage)
+                #console.log(gate.find(fieldQuery).length)
+        else
+            if progStage == 'prog0'
+                progZero = true
+            else if progStage == 'prog1'
+                #console.log('prog1'+el.prop('name')+'-'+progStage)
+                progOne = true
+            else if progStage == 'prog2'
+                #console.log('prog2'+el.prop('name')+'-'+progStage)
+                progTwo = true
+    if progZero
+        $('#prog2').hide()
+        $('#prog2 input, #prog2 select').each ->
+            $(this).removeAttr('required')
+        $('#prog1').hide()
+        $('#prog1 input, #prog1 select').each ->
+            $(this).removeAttr('required')
+    else if progOne
+        $('#prog2').hide()
+        $('#prog2 input, #prog2 select').each ->
+            $(this).removeAttr('required')
+    else if progTwo and not progOne
+        $('#prog1').hide()
+        $('#prog1 input, #prog1 select').each ->
+            $(this).removeAttr('required')
 
     if gate.find(fieldQuery).length <= 1
         unlockAsset false
