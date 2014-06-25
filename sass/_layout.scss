@@ -97,6 +97,9 @@ hr.fadeline {
 }
 .wp-caption {
     margin: 1em !important;
+    @include breakpoint($phone-only) {
+        width: auto !important;
+    }
 }
 // Hide from screen but still make accessible
 .hidefromscreen {
