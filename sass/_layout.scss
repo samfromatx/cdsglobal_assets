@@ -95,6 +95,9 @@ hr.fadeline {
 .printonly {
     display: none;
 }
+.wp-caption {
+    margin: 1em !important;
+}
 // Hide from screen but still make accessible
 .hidefromscreen {
    position: absolute !important;
