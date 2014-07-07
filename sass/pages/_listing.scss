@@ -10,19 +10,17 @@
         &.more {
             display: none;
         }
+        &.featured {
+            // placeholder for featured resource styles
+        }
     }
-    &.featured {
+    &.other-resources {
         li {
             background-color: inherit;
             padding: 10px 5px;
 
             > *:not(.icon) {
                 margin-left: 90px;
-            }
-            &:last-child {
-                border-bottom: #b7ac9d dashed 1px;
-                margin-bottom: 40px;
-                padding-bottom: 20px;
             }
         }
     }

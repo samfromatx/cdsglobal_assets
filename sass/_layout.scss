@@ -89,6 +89,19 @@ hr.fadeline {
     background-image:     -ms-linear-gradient(left, rgba(181,173,155,0), rgba(181,173,155,0.75), rgba(181,173,155,0));
     background-image:      -o-linear-gradient(left, rgba(181,173,155,0), rgba(181,173,155,0.75), rgba(181,173,155,0));
 }
+hr.dottedline {
+    border: none;
+    border-top: dotted 1px #b7ac9d;
+    color: #ffffff;
+    background-color: #F8F5F2;
+
+}
+hr.dashedline {
+    border: none;
+    border-top: dashed 1px #b7ac9d;
+    color: #ffffff;
+    background-color: #F8F5F2;
+}
 .addthis_toolbox {
     padding: 10px 0 0 0;
 }
