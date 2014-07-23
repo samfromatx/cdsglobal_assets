@@ -1,0 +1,78 @@
+// Breakpoint
+$tablet: max-width 800px;
+$desktop: max-width 960px;
+$phone: max-width 668px;
+
+.optin_header {
+    background-color: #eeeae0;
+    padding: 5px 5px 5px 50px;
+    @include breakpoint($tablet) {
+        padding: 0px;
+    }
+    @include breakpoint($phone) {
+        display: none;
+    }
+}
+.optin_soundicon {
+    background-image: url("http://stage.cds-global.com/content/uploads/2014/07/sounds.png");
+    width: 65px;
+    height: 65px;
+    background-position: center center;
+    position: relative;
+    top: -30px;
+    left: 100px;
+    @include breakpoint($desktop) {
+        left: 15px;
+    }
+     @include breakpoint($phone) {
+        float: left;
+        top: 0px;
+    }
+}
+.optin_arrow {
+    background-image: url("http://stage.cds-global.com/content/uploads/2014/07/arrow.png");
+    height: 76px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 25px;
+}
+.optin_callout {
+    left: 165px;
+    position: relative;
+    top: -60px;
+    font-size: 1.5em;
+    padding-right: 20px;
+    @include breakpoint($desktop) {
+        font-size: 1.4em;
+        left: 75px;
+    }
+    @include breakpoint($tablet) {
+        font-size: 1.15em;
+    }
+    @include breakpoint($phone) {
+        font-size: 1.3em;
+        left: 20px;
+        top: 10px;
+    }
+}
+.optin_main {
+    position: relative;
+    top: -60px;
+    clear: left;
+    @include breakpoint($phone) {
+        top: 20px;
+    }
+}
+#optin_email {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.optin_submit {
+    border-radius: 10px !important;
+    background-color: #fc4c00 !important;
+    border-color: #fc4c00 !important;
+}
+.optin_note {
+    font-size: .8em;
+}
