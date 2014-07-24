@@ -1,0 +1,32 @@
+
+.widget.optinwidget {
+    line-height: 1.3em;
+    padding: 0px;
+    background-color: #f7f4ee;
+
+    a {
+        display: block;
+        font-weight: bold;
+    }
+    p {
+        margin: 10px 20px;
+        font-size: 1.1em;
+    }
+    .optinwidget-banner {
+        background-image: url('/content/uploads/2014/07/optin_widget_banner.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 248px;
+        height: 90px;
+    }
+    .optinwidget-text {
+
+    }
+    .optinwidget-text a {
+        text-transform: uppercase;
+        margin: 15px auto;
+        display: table;
+        letter-spacing: 1px;
+        font-weight: normal;
+    }
+}

@@ -52,3 +52,15 @@ carousel.find('.item').on 'click', ->
     carousel.trigger 'owl.next'
 
 $(window).on 'resize', shrinkHomeBanners
+
+if $("#optincta").length
+  $(".container").css "padding-top", "40px"
+  $(".container").css "transform", "none"
+  $("#optincta").show()
+  $(".optin-close").click ->
+    $("#optincta").slideUp "slow", ->
+      $(".container").css "padding-top", "0px"
+      $(".container").css "transform", "translate3d(0, 0, 0)"
+      return
+
+    return

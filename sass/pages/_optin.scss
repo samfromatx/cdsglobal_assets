@@ -1,7 +1,9 @@
 // Breakpoint
-$tablet: max-width 800px;
 $desktop: max-width 960px;
+$tablet-big: max-width 900px;
+$tablet: max-width 800px;
 $phone: max-width 668px;
+$phone-small: max-width 480px;
 
 .optin_header {
     background-color: #eeeae0;
@@ -14,7 +16,7 @@ $phone: max-width 668px;
     }
 }
 .optin_soundicon {
-    background-image: url("http://stage.cds-global.com/content/uploads/2014/07/sounds.png");
+    background-image: url("/content/uploads/2014/07/sounds.png");
     width: 65px;
     height: 65px;
     background-position: center center;
@@ -30,7 +32,7 @@ $phone: max-width 668px;
     }
 }
 .optin_arrow {
-    background-image: url("http://stage.cds-global.com/content/uploads/2014/07/arrow.png");
+    background-image: url("/content/uploads/2014/07/arrow.png");
     height: 76px;
     background-position: right center;
     background-repeat: no-repeat;
@@ -42,7 +44,7 @@ $phone: max-width 668px;
     position: relative;
     top: -60px;
     font-size: 1.5em;
-    padding-right: 20px;
+    padding-right: 30px;
     @include breakpoint($desktop) {
         font-size: 1.4em;
         left: 75px;
@@ -69,10 +71,81 @@ $phone: max-width 668px;
     padding-bottom: 15px;
 }
 .optin_submit {
-    border-radius: 10px !important;
+    border-radius: 20px !important;
     background-color: #fc4c00 !important;
     border-color: #fc4c00 !important;
 }
 .optin_note {
     font-size: .8em;
+}
+
+#optincta {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: #8dc73f;
+    color: #FFF;
+    display: none;
+    letter-spacing: 1px;
+    z-index: 1000;
+    @include breakpoint($tablet-big) {
+        position: relative;
+    }
+    @include breakpoint($phone-small) {
+        font-size: 0.8em;
+    }
+    a {
+        color: #362f2d;
+        text-decoration: none;
+        font-weight: bold;
+        letter-spacing: normal;
+        white-space: nowrap;
+        font-size: 1.1em;
+    }
+    a:hover {
+        color: #4e4a42;
+        border-bottom: 1px solid #4e4a42;
+        padding-bottom: 2px;
+    }
+    .message {
+        padding: 8px 20px;
+    }
+    span.optin-close {
+        float:right;
+        cursor:pointer;
+        color: #b7ac9d;
+        border: 1px solid #b7ac9d;
+        border-radius: 25px;
+        background: #f7f4ee;
+        font-size: 25px;
+        font-weight: bold;
+        display: inline-block;
+        line-height: 0px;
+        padding: 11px 3px 11px 4px;
+        margin-right: 10px;
+        @include breakpoint($tablet-big) {
+            display: none;
+        }
+    }
+    span.optin-close:before {
+        content: "×";
+    }
+    .megaphone {
+        background-image: url('/content/uploads/2014/07/megaphone.png');
+        background-repeat: no-repeat;
+        width: 27px;
+        height: 23px;
+        background-position: center center;
+        float: left;
+        padding: 8px 18px;
+        @include breakpoint($phone-small) {
+            height: 40px;
+            padding-top: 15px;
+        }
+    }
+}
+@include breakpoint($tablet-big) {
+    .container {
+        padding-top: 0px !important;
+    }
 }
