@@ -2,6 +2,7 @@
 $ = jQuery
 
 gate = $ 'form.eloqua-form'
+gateother = $ 'span.hideifungated'
 
 if not gate.length
     return
@@ -45,6 +46,7 @@ gate.on 'submit', ->
 
 unlockAsset = (autoDownload) ->
     gate.slideUp()
+    gateother.hide()
 
     gated.slideDown()
 
