@@ -1,8 +1,17 @@
-
 .widget.optinwidget {
     line-height: 1.3em;
     padding: 0px;
     background-color: #f7f4ee;
+     @include breakpoint(max-width 1023px) {
+        font-size: 0.75em;
+     }
+    @include breakpoint(max-width 767px) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.0em;
+        text-align: center;
+    }
 
     a {
         display: block;
@@ -11,13 +20,17 @@
     p {
         margin: 10px 20px;
         font-size: 1.1em;
+        @include breakpoint(max-width 1023px) {
+            margin: 5px 15px;
+         }
     }
-    .optinwidget-banner {
-        background-image: url('/content/uploads/2014/07/optin_widget_banner.png');
-        background-repeat: no-repeat;
-        background-position: center center;
-        width: 248px;
-        height: 90px;
+    .optinwidget-banner img {
+        width: 100%;
+        @include breakpoint(max-width 767px) {
+            width: inherit;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
     .optinwidget-text {
 
