@@ -1,0 +1,22 @@
+
+.widget.nonprofit {
+    line-height: 1.5em;
+
+    a {
+        display: block;
+        font-weight: bold;
+    }
+    ul {
+        padding: 10px 15px;
+        margin: 0px;
+        line-height: 16px;
+    }
+    li {
+        padding: 5px 0px;
+    }
+    p {
+        text-align: center;
+        margin: 0px;
+        text-transform: uppercase;
+    }
+}
