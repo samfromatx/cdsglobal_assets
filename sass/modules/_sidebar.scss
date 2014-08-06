@@ -103,3 +103,37 @@
         }
     }
 }
+
+.additional {
+    margin-bottom: 10px;
+    margin-top: 75px;
+
+    div:first-of-type {
+            max-width: 98%;
+            background-color: #f7f4ee;
+        }
+
+    .widget {
+        width: 100%;
+        margin: 10px 2% 10px 0px;
+
+        @include breakpoint($tablet-only) {
+            float: left;
+            width: 98%;
+            margin-left: 0;
+        }
+
+        @include breakpoint($widescreen) {
+            max-width: 48%;
+            float: left;
+            .read {
+                font-size: 1.4em;
+            }
+        }
+    }
+
+    > li {
+        list-style: none;
+    }
+
+}

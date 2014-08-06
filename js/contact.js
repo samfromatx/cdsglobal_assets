@@ -53,7 +53,8 @@
   $('.contact').on('submit', function() {
     var $this;
     $this = $(this);
-    $this.after('<p>Thank you for your submission.</p>').slideDown();
+    $('#thankyou').slideDown();
+    $('#contactinfo').slideUp();
     return $this.slideUp();
   });
 

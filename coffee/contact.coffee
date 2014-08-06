@@ -38,7 +38,8 @@ subject.on 'change', ->
 
 $('.contact').on 'submit', ->
     $this = $ this
-    $this.after('<p>Thank you for your submission.</p>').slideDown()
+    $('#thankyou').slideDown()
+    $('#contactinfo').slideUp()
     $this.slideUp()
 
 if subjectQString == 'demo' or subjectQString == 'quote'
