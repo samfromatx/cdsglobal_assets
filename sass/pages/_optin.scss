@@ -66,9 +66,19 @@ $phone-small: max-width 480px;
         top: 20px;
     }
 }
-#optin_email {
-    padding-top: 15px;
-    padding-bottom: 15px;
+#optinform {
+    input {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    select {
+        border: 0px none;
+        background-color: #E6E6E5;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: block;
+    }
+
 }
 .optin_submit {
     border-radius: 20px !important;
