@@ -97,7 +97,7 @@ $phone-small: max-width 480px;
     color: #FFF;
     display: none;
     letter-spacing: 1px;
-    z-index: 1000;
+    z-index: 999;
     @include breakpoint($tablet-big) {
         position: relative;
     }

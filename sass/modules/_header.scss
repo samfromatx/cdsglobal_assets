@@ -68,11 +68,12 @@
         color: $color;
         background-color: transparent;
 
-        @include dropdown(120px) {
+        @include dropdown(175px) {
             color: $color;
             font-family: $headline-font;
             font-size: 1.1em;
             margin-left: 5px;
+            padding: 0;
         }
 
         &::after {
@@ -87,7 +88,7 @@
             $color: #c1ac96;
             color: $color;
 
-            @include dropdown(180px) {
+            @include dropdown(190px) {
                 color: $color;
                 font-family: $body-font;
             }
