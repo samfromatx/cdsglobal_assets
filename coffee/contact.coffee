@@ -49,6 +49,7 @@ if subjectQString == 'demo' or subjectQString == 'quote'
 
 subjectUK = $ '.contact select[name="emailinquiry"]'
 
+inquiryUK = $ '.contact select[name="salesInquiry"]'
 businessname = $ '.contact input[name="bizname"]'
 businesstype = $ '.contact input[name="biztype"]'
 businessphone = $ '.contact input[name="phone"]'
@@ -58,9 +59,26 @@ businessname.hide()
 businesstype.hide()
 businessphone.hide()
 countryUK.hide()
+inquiryUK.hide()
 
 subjectUK.on 'change', ->
-    if subjectUK.val() == 'Career Inquiries' || subjectUK.val() == 'Customer Service' || subjectUK.val() == ''
+    if subjectUK.val() == 'Sales'
+        inquiryUK.show()
+        inquiryUK.attr('required', 'true')
+        inquiryUK.attr('aria-required', 'true')
+        countryUK.show()
+        countryUK.attr('required', 'true')
+        countryUK.attr('aria-required', 'true')
+        businessname.show()
+        businessname.attr('required', 'true')
+        businessname.attr('aria-required', 'true')
+        businesstype.show()
+        businessphone.show()
+    else
+        inquiryUK.val ''
+        inquiryUK.hide()
+        inquiryUK.removeAttr('required')
+        inquiryUK.attr('aria-required', 'false')
         countryUK.val ''
         countryUK.hide()
         countryUK.removeAttr('required')
@@ -73,12 +91,3 @@ subjectUK.on 'change', ->
         businesstype.hide()
         businessphone.val ''
         businessphone.hide()
-    else
-        countryUK.show()
-        countryUK.attr('required', 'true')
-        countryUK.attr('aria-required', 'true')
-        businessname.show()
-        businessname.attr('required', 'true')
-        businessname.attr('aria-required', 'true')
-        businesstype.show()
-        businessphone.show()
