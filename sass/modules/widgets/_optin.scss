@@ -25,15 +25,17 @@
          }
     }
     .optinwidget-banner img {
-        width: 100%;
-        @include breakpoint(max-width 767px) {
+        width: 248px;
+        //@include breakpoint(max-width 767px) {
             width: inherit;
             margin-left: auto;
             margin-right: auto;
-        }
+        //}
     }
     .optinwidget-text {
-
+        width: 248px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .optinwidget-text a {
         text-transform: uppercase;
