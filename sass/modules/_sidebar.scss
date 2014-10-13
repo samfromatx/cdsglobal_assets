@@ -137,3 +137,35 @@
     }
 
 }
+
+.sidebarListing {
+    margin: 25px 2%;
+    padding-top: 25px;
+    float: left;
+    border-top: solid 3px #ef5439;
+    width: 95%;
+
+    .widget {
+        width: 100%;
+        margin: 10px 1% 10px 1%;
+
+        @include breakpoint($tablet-only) {
+            float: left;
+            width: 48%;
+        }
+
+        @include breakpoint($widescreen) {
+            max-width: 31.333%;
+            float: left;
+            min-height: 325px;
+            .read {
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    > li {
+        list-style: none;
+    }
+
+}

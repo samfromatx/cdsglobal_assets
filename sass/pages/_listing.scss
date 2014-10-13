@@ -26,10 +26,23 @@
     }
 
     li {
-        clear: left;
+        //clear: left;
         background-color: #f7f4ee;
-        padding: 20px;
-        margin-bottom: 5px;
+        padding: 15px;
+        margin: 10px 0;
+
+        @include breakpoint($desktop) {
+            &:not(.resource) {
+                width: 46%;
+                min-height: 175px;
+            }
+        }
+
+        @include breakpoint($tablet $extrawide) {
+            p {
+                font-size: 0.9em;
+            }
+        }
 
         $icon-size: 100px;
 
@@ -84,6 +97,21 @@
         border-radius: 80px;
         margin: 0;
         }
+    }
+    @include breakpoint($desktop) {
+        li:nth-child(odd) {
+            &:not(.resource) {
+                float: left;
+                }
+        }
+        li:nth-child(even) {
+            &:not(.resource) {
+                float: right;
+                }
+        }
+    }
+    li:hover {
+        background-color: #eeeae0;
     }
 }
 
