@@ -102,11 +102,13 @@
         li:nth-child(odd) {
             &:not(.resource) {
                 float: left;
+                clear: left;
                 }
         }
         li:nth-child(even) {
             &:not(.resource) {
-                float: right;
+                float: left;
+                margin-left: 15px;
                 }
         }
     }
