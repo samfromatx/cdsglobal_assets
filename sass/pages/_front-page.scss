@@ -37,6 +37,7 @@
 
     .features {
         margin: 30px 3%;
+        height: auto !important;
 
         .gutter {
             width: 2%;
@@ -47,32 +48,44 @@
         }
 
         .widget {
-            margin-bottom: 30px;
             width: 100%;
             height: 450px;
+            margin: 10px 5px 30px 5px;
+            float: left;
+            position: relative !important;
+            top: 0 !important;
+            left: 0 !important;
 
-            @include breakpoint($not-phone) {
-                width: 49%;
+            @include breakpoint($tablet) {
+                width: 48%;
 
                 &.double {
-                    width: 100%;
+                    width: 99%;
                 }
             }
 
-            @include breakpoint($widescreen) {
+            /*@include breakpoint($widescreen) {
                 width: 32%;
 
                 &.double {
                     width: 66%;
                 }
-            }
+            }*/
 
             @include breakpoint($extrawide) {
                 width: 24%;
+                margin: 10px 5px 30px 5px;
 
                 &.double {
                     width: 49%;
                 }
+            }
+
+            &.industries {
+                width: 100%;
+                border: none;
+                margin-right: 0;
+                margin-left: 0;
             }
         }
 
