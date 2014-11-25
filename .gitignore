@@ -3,3 +3,4 @@ config.codekit
 .sass-cache/
 .tmp/
 *codekit*
+wp config files/
