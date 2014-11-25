@@ -21,7 +21,7 @@ subject.on 'change', ->
         secondLevel.val ''
         secondLevel.hide()
 
-hearaboutus = $ '.contact input[name="inboundOriginator1"]'
+hearaboutus = $ '.contact #forminboundOriginator'
 
 hearaboutus.hide()
 
