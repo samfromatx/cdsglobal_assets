@@ -1,10 +1,5 @@
 
 .widget.industries {
-    margin-top: 30px;
-    background-color: #1cadf1;
-    width: 100%;
-    margin: 0;
-    height: auto !important;
 
     dl {
         margin: 0;
@@ -40,9 +35,28 @@
         font-style: italic;
         margin-lefT: 0;
     }
+}
+
+.industries-banner {
+    background-color: #e8e0c2;
+    width: 100%;
+    height: auto;
+    margin: 50px 0px 0px 0px !important;
+    float: left;
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    border-bottom: 5px solid #19acf1;
+
     h2 {
         text-align: center;
-        font-size: 1.8em;
+        font-size: 1.4em;
+        background-color: #19acf1;
+        margin: 0px;
+        padding: 18px 0px;
+        color: #ffffff;
+        letter-spacing: 1px;
+        font-weight: normal;
     }
     ul {
         font-size: 1.4em;
@@ -68,17 +82,23 @@
             a {
                 font-weight: bold;
                 letter-spacing: 2px;
-                color: #ffffff;
             }
         }
-
         p {
-            font-size: .8em;
+            font-size: .65em;
             color: #352821;
+            font-weight: bold;
         }
+    }
+    .industrythree {
+        width: 29%;
     }
 
     @include breakpoint($phone-only) {
+        padding-bottom: 15px;
+        ul {
+            margin-top: 15px;
+        }
         li {
             width: 46%;
             margin: 10px 1%;
@@ -92,6 +112,9 @@
                 }
             }
         }
+        .industrythree {
+            width: 46%;
+        }
         h2 {
             font-size: 1.3em;
         }
@@ -101,7 +124,9 @@
         li:nth-child(3) {
             clear: left;
         }
-
+        li:nth-child(3).industrythree {
+            margin: 0 25%;
+        }
     }
 
     @include breakpoint($tablet-only) {
