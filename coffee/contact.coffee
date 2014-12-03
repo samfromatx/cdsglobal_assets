@@ -3,6 +3,7 @@ $ = jQuery
 
 subject = $ '.contact select[name="subject"]'
 secondLevel = $ '.contact select[name="customer_service"]'
+magTitle = $ '.contact input[name="CustomerService_Publication"]'
 
 getParameterByName = (name) ->
   name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]")
@@ -13,13 +14,21 @@ getParameterByName = (name) ->
 subjectQString = getParameterByName('sbj');
 
 secondLevel.hide()
+magTitle.hide()
 
 subject.on 'change', ->
     if subject.val() == 'Customer Service'
         secondLevel.show()
+        magTitle.show()
     else
         secondLevel.val ''
         secondLevel.hide()
+        magTitle.val ''
+        magTitle.hide()
+
+if subjectQString == 'customerservice'
+	secondLevel.show()
+	magTitle.show()
 
 hearaboutus = $ '.contact #forminboundOriginator'
 
