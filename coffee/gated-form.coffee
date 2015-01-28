@@ -59,76 +59,115 @@ unlockAsset = (autoDownload) ->
 # This function gets automatically called for every Eloqua data lookup.
 # It needs to do multiple things, so we rely on the call order to switch behavior
 
-lookupNum = 0
-window.SetElqContent = ->
-    switch lookupNum
-        when 0 then lookupEloquaData()
-        when 1 then hideFilledFields()
+# added 1.5 sec delay to give form enough time to load before checking for eloqua
+callback = ->
 
-    lookupNum++
+    elqFunc = false
+    lookupNum = 0
+    console.log('before lookup')
+    window.SetElqContent = ->
+        console.log('inside lookup')
+        elqFunc = true
+        switch lookupNum
+            when 0 then lookupEloquaData()
+            when 1 then hideFilledFields()
 
-lookupEloquaData = ->
-    email = GetElqContentPersonalizationValue 'V_ElqEmailAddress'
-    lookupValue = "<C_EmailAddress>#{ email }</C_EmailAddress>"
-    _elqQ.push ['elqDataLookup', 'b25edf2517d04bea9ecdc4866011e11e', lookupValue]
-    if email == ''
-    	$('#prog1').hide()
-    	$('#prog1 input, #prog1 select').each ->
-	    	$(this).removeAttr('required')
-    	$('#prog2').hide()
-    	$('#prog2 input, #prog2 select').each ->
-	    	$(this).removeAttr('required')
+        lookupNum++
 
-hideFilledFields = ->
-    if typeof GetElqCustomerGUID == 'function'
-        guidField = gate.find ':input[name=elqCustomerGUID]'
-        guidField.val GetElqCustomerGUID
-    fieldQuery = ':input:visible:not([type=submit])'
-    fields = gate.find fieldQuery
-    progZero = false
-    progOne = false
-    progTwo = false
-    fields.each (i, el) ->
-        el = $ el
-        apiName = el.data 'api-name'
-        progStage = el.data 'prog-stage'
-        if value = GetElqContentPersonalizationValue apiName
-            if el.prop('name') == 'emailAddress'
-                el.val value
-                #console.log(el.prop('name')+'-'+progStage)
-                #console.log(gate.find(fieldQuery).length)
+    console.log('after lookup')
+
+    lookupEloquaData = ->
+        console.log('lookupEloquaData')
+        email = GetElqContentPersonalizationValue 'V_ElqEmailAddress'
+        lookupValue = "<C_EmailAddress>#{ email }</C_EmailAddress>"
+        _elqQ.push ['elqDataLookup', 'b25edf2517d04bea9ecdc4866011e11e', lookupValue]
+        if email == ''
+        	$('#prog1').hide()
+        	$('#prog1 input, #prog1 select').each ->
+    	    	$(this).removeAttr('required')
+        	$('#prog2').hide()
+        	$('#prog2 input, #prog2 select').each ->
+    	    	$(this).removeAttr('required')
+
+    hideFilledFields = ->
+        console.log('hideFilledFields')
+        if typeof GetElqCustomerGUID == 'function'
+            guidField = gate.find ':input[name=elqCustomerGUID]'
+            guidField.val GetElqCustomerGUID
+        fieldQuery = ':input:visible:not([type=submit])'
+        fields = gate.find fieldQuery
+        progZero = false
+        progOne = false
+        progTwo = false
+        #$('#prog1').show()
+        #$('#prog1 input, #prog1 select').each ->
+            #$(this).attr('required')
+        #$('#prog2').show()
+        #$('#prog2 input, #prog2 select').each ->
+            #$(this).attr('required')
+        fields.each (i, el) ->
+            #$('#prog1').show()
+            #$('#prog2').show()
+            el = $ el
+            apiName = el.data 'api-name'
+            progStage = el.data 'prog-stage'
+            if value = GetElqContentPersonalizationValue apiName
+                if el.prop('name') == 'emailAddress'
+                    el.val value
+                    console.log(el.prop('name')+'-'+progStage)
+                    #console.log(gate.find(fieldQuery).length)
+                else
+                    el.remove()
+                    #console.log(el.prop('name')+'-'+progStage)
+                    #console.log(gate.find(fieldQuery).length)
             else
-                el.remove()
-                #console.log(el.prop('name')+'-'+progStage)
-                #console.log(gate.find(fieldQuery).length)
-        else
-            if progStage == 'prog0'
-                progZero = true
-            else if progStage == 'prog1'
-                #console.log('prog1'+el.prop('name')+'-'+progStage)
-                progOne = true
-            else if progStage == 'prog2'
-                #console.log('prog2'+el.prop('name')+'-'+progStage)
-                progTwo = true
-    if progZero
-        $('#prog2').hide()
-        $('#prog2 input, #prog2 select').each ->
-            $(this).removeAttr('required')
-        $('#prog1').hide()
-        $('#prog1 input, #prog1 select').each ->
-            $(this).removeAttr('required')
-    else if progOne
-        $('#prog2').hide()
-        $('#prog2 input, #prog2 select').each ->
-            $(this).removeAttr('required')
-    else if progTwo and not progOne
-        $('#prog1').hide()
-        $('#prog1 input, #prog1 select').each ->
-            $(this).removeAttr('required')
+                console.log(progStage)
+                if progStage == 'prog0'
+                    progZero = true
+                else if progStage == 'prog1'
+                    #console.log('prog1'+el.prop('name')+'-'+progStage)
+                    progOne = true
+                else if progStage == 'prog2'
+                    #console.log('prog2'+el.prop('name')+'-'+progStage)
+                    progTwo = true
+        if progZero
+            $('#prog2').hide()
+            $('#prog2 input, #prog2 select').each ->
+                $(this).removeAttr('required')
+            $('#prog1').hide()
+            $('#prog1 input, #prog1 select').each ->
+                $(this).removeAttr('required')
+        else if progOne
+            $('#prog1').show()
+            $('#prog1 input, #prog1 select').each ->
+                $(this).attr('required')
+            $('#prog2').hide()
+            $('#prog2 input, #prog2 select').each ->
+                $(this).removeAttr('required')
+        else if progTwo and not progOne
+            $('#prog2').show()
+            $('#prog2 input, #prog2 select').each ->
+                $(this).attr('required')
+            $('#prog1').hide()
+            $('#prog1 input, #prog1 select').each ->
+                $(this).removeAttr('required')
 
-    if gate.find(fieldQuery).length <= 1
-        unlockAsset false
+        if gate.find(fieldQuery).length <= 1
+            unlockAsset false
 
-# Start lookup of already filled in Eloqua fields
-_elqQ.push ['elqDataLookup', 'b518cf2c082d458d86faa124f333c9f2', '']
-_elqQ.push ['elqGetCustomerGUID']
+    # Start lookup of already filled in Eloqua fields
+    console.log('elq.push')
+    _elqQ.push ['elqDataLookup', 'b518cf2c082d458d86faa124f333c9f2', '']
+    _elqQ.push ['elqGetCustomerGUID']
+
+setTimeout callback, 2000
+
+#if !elqFunc
+#if document.cookie.indexOf('ELQSTATUS') >= 0
+    #console.log('elqFunc')
+    #$('#prog1').hide()
+	#$('#prog1 input, #prog1 select').each ->
+    	#$(this).removeAttr('required')
+	#$('#prog2').hide()
+	#$('#prog2 input, #prog2 select').each ->
+    	#$(this).removeAttr('required')
