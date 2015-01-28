@@ -1,9 +1,11 @@
 
 $(document).ready(function () {
     $(".btn-info").click(function (e) {
-       // e.preventDefault();
-        console.log("click download");
-        $("#elqForm").submit();
+        //e.preventDefault();
+        if ($("#elqForm").is(":hidden"))  {
+            console.log("click download");
+            $("#elqForm").submit();
+        }
     });
 
     $(".eventon_list_event .no_events").parent().parent().prev().hide();
