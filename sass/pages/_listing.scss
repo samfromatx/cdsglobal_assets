@@ -75,7 +75,7 @@
             text-transform: lowercase;
         }
 
-        h3 {
+        h2, h3 {
             @include breakpoint($not-phone) {
                 margin: 0;
             }
