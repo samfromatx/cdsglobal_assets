@@ -59,6 +59,28 @@ iframe {
     }
 }
 
+.callout-box {
+    float: right;
+    width: 30%;
+    border: solid 1px #b7ac9d;
+    background-color: #f7f4ee;
+    padding: 10px;
+    margin: 0 10px;
+    @include breakpoint($phone-only) {
+        float: none;
+        width: 90%;
+        margin: 10px 0 0 0;
+        img {
+            display: none;
+        }
+    }
+}
+.hide-on-mobile {
+    @include breakpoint($phone-only) {
+        display: none;
+    }
+}
+
 // WordPress editor classes
 .alignright {
     float: right;
