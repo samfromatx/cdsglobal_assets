@@ -64,6 +64,10 @@
                 }
             }
 
+            @include breakpoint($phone-only) {
+                height: 475px;
+            }
+
             /*@include breakpoint($widescreen) {
                 width: 32%;
 
