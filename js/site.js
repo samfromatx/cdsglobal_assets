@@ -16,4 +16,13 @@ $(document).ready(function () {
         $("#formcustomer").show();
     }
 
+    $('.contact').submit(function(){
+        if ($('input#website').val().length != 0) {
+            //console.log("You are a bot. Bye!")
+            return false;
+        } else if (($('input#formfirstName').val().indexOf("http://") != -1) || ($('input#formfirstName').val().indexOf("https://") != -1)) {
+            return false;
+        }
+    });
+
 });
