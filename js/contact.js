@@ -70,7 +70,7 @@
     return $this.slideUp();
   });
 
-  if (subjectQString === 'demo' || subjectQString === 'quote') {
+  if (subjectQString === 'demo' || subjectQString === 'quote' || subjectQString === 'sales') {
     hearaboutus.show();
     hearaboutus.attr('required', 'true');
     hearaboutus.attr('aria-required', 'true');

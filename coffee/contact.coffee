@@ -51,7 +51,7 @@ $('.contact').on 'submit', ->
     $('#contactinfo').slideUp()
     $this.slideUp()
 
-if subjectQString == 'demo' or subjectQString == 'quote'
+if subjectQString == 'demo' or subjectQString == 'quote' or subjectQString == 'sales'
 	hearaboutus.show()
 	hearaboutus.attr('required', 'true')
 	hearaboutus.attr('aria-required', 'true')
