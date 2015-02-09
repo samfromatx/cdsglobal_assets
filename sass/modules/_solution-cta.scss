@@ -1,0 +1,146 @@
+.solution-cta-wrapper {
+    padding-top: 20px;
+}
+
+.solution-cta {
+    position: relative;
+    width: 31%;
+    background-color: #b7ac9d;
+    height: 110px;
+    float: left;
+    margin: 10px 1% 70px 0px;
+
+    &:last-child {
+        background-color: #19acf1;
+        margin-right: 0px;
+        width: 36%;
+    }
+
+    i.icon {
+        padding: 10px 5px 20px 5px;
+        position: relative;
+        float: left;
+        font-size: 55px;
+    }
+
+    i.datasheet::before {
+        content: '\e00f';
+    }
+    i.overview::before {
+        content: '\e010';
+    }
+    i.clock::before {
+        content: '\e608';
+    }
+
+    h3, p {
+        margin: 10px 0 0 75px;
+    }
+
+    .headline {
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 17px;
+        font-weight: 500;
+        padding-right: 10px;
+        line-height: 20px
+    }
+
+    .description {
+        color: #000000;
+        font-size: 14px;
+        font-weight: bold;
+        padding-right: 60px;
+        margin-top: 5px;
+        line-height: 16px;
+    }
+
+    .arrow {
+        position: absolute;
+        margin: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        &::after {
+            @extend %circle-arrow;
+            border-radius: 18px;
+            width: 12px;
+            font-size: 12px;
+            padding: 8px;
+            margin: 10px;
+            color: #e74a1a;
+            background-color: #fcfcfa;
+            top: auto;
+            bottom: 0;
+        }
+
+        &:hover::after {
+            color: #fcfcfa;
+            background-color: #e74a1a;
+        }
+    }
+
+    @include breakpoint(1400px) {
+        .headline {
+            font-size: 1.2em;
+
+        }
+    }
+
+    @include breakpoint($desktop $extrawide) {
+        min-height: 120px;
+        .headline {
+            font-size: .95em;
+            line-height: 16px;
+        }
+         .description {
+             font-size: .8em;
+             padding-right: 40px;
+         }
+        i.icon {
+            padding: 10px 5px 10px 10px;
+            font-size: 45px;
+        }
+        h3, p {
+            margin: 15px 0 0 65px;
+        }
+    }
+    @include breakpoint(861px $desktop) {
+        .headline {
+            font-size: .9em;
+        }
+        .description {
+            font-size: .8em;
+        }
+    }
+    @include breakpoint(766px 860px) {
+        width: 49%;
+        height: 100px;
+        margin-bottom: 0px;
+        &:nth-child(2) {
+            margin: 10px 0px 0px 1%;
+        }
+        &:last-child {
+            margin-right: 0px;
+            width: 100%;
+            clear: left;
+            margin-bottom: 70px;
+        }
+
+    }
+    @include breakpoint($phone-only) {
+        clear: left;
+        width: 100%;
+        height: 100px;
+        margin-bottom: 0px;
+        &:last-child {
+            width: 100%;
+            clear: left;
+            margin-bottom: 30px;
+        }
+    }
+}
