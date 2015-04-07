@@ -63,9 +63,34 @@ iframe {
     float: right;
     width: 30%;
     border: solid 1px #b7ac9d;
-    background-color: #f7f4ee;
+    background-color: #f0ece2;
     padding: 10px;
     margin: 0 10px;
+    border-left: solid 16px #19acf1;
+    h3 {
+        margin: .5em;
+        color: #ef5439;
+    }
+    ul {
+        margin: 0.75em 0;
+        padding: 0 1em;
+        list-style: none;
+    }
+    li {
+        margin-left: 20px;
+    }
+    li:before {
+        content: "";
+        border-color: transparent #ef5439;
+        border-style: solid;
+        border-width: 0.35em 0 0.35em 0.45em;
+        display: block;
+        height: 0;
+        width: 0;
+        left: -1em;
+        top: 1.07em;
+        position: relative;
+    }
     @include breakpoint($phone-only) {
         float: none;
         width: 90%;
