@@ -1,0 +1,37 @@
+.clip-image {
+    border-radius: 10% 10% 10% 0;
+}
+.leader-col {
+    float: left;
+    width: 23%;
+    margin-left: 2%;
+    margin-bottom: 25px;
+     em {
+         line-height: 0.8em;
+         font-size: 0.9em;
+     }
+}
+.leader-col-2 {
+    float: left;
+    width: 46%;
+    margin-left: 2%;
+    margin-bottom: 25px;
+}
+.leader-biopage-image {
+    border: 5px solid #f7f4ee;
+    outline: 2px solid #4e4a42;
+    margin-top: 0.5em !important;
+    margin-bottom: 200px !important;
+}
+@include breakpoint($phone-only) {
+    .leader-col {
+        width: 45%;
+        margin-left: 5%;
+    }
+    .leader-col:nth-child(3) {
+        clear:left;
+    }
+    .leader-col-2 {
+        display: none;
+    }
+}
