@@ -59,7 +59,7 @@ unlockAsset = (autoDownload) ->
 # This function gets automatically called for every Eloqua data lookup.
 # It needs to do multiple things, so we rely on the call order to switch behavior
 
-# added 1.5 sec delay to give form enough time to load before checking for eloqua
+# added 3 sec delay to give form enough time to load before checking for eloqua
 callback = ->
 
     elqFunc = false
@@ -160,7 +160,7 @@ callback = ->
     _elqQ.push ['elqDataLookup', 'b518cf2c082d458d86faa124f333c9f2', '']
     _elqQ.push ['elqGetCustomerGUID']
 
-setTimeout callback, 2000
+setTimeout callback, 3000
 
 #if !elqFunc
 #if document.cookie.indexOf('ELQSTATUS') >= 0
