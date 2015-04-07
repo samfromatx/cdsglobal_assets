@@ -180,9 +180,6 @@
     return _elqQ.push(['elqGetCustomerGUID']);
   };
 
-  setTimeout(callback, 2000);
+  setTimeout(callback, 3000);
 
 }).call(this);
-
-
-//# sourceMappingURL=gated-form.js.map
