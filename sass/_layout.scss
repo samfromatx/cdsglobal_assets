@@ -100,6 +100,29 @@ iframe {
         }
     }
 }
+.quote-box {
+    background-color: #dcd7ce;
+    padding: 15px 15px 1px 15px;
+    float: right;
+    width: 30%;
+    border-radius: 15px;
+    margin: 10px;
+    p {
+        color: #8f7a63;
+        font-family: Roboto, sans-serif;
+        font-size: 1.1em;
+        line-height: 1.5em;
+        &::before {
+            content: "";
+            display: block;
+            background: url("http://www.cds-global.com/graphics/web/quote.png") no-repeat;
+            width: 60px;
+            height: 60px;
+            float: left;
+            margin: -20px 0;
+        }
+    }
+}
 .hide-on-mobile {
     @include breakpoint($phone-only) {
         display: none;
